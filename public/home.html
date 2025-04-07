@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Labaig</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<header id="top-bar">
+      <h1 id="title">Labaig.Ph</h1>     
+      <p id="sub-title">Fotografía Profesional</p> 
+</header>
+
+<body class="body">
+  
+   <!-- <img src="/img/prueba1.jpg" alt="" id="frontImg"> -->
+   <div class="slide">
+    <div class="slide-inner">
+        <input class="slide-open" type="radio" id="slide-1" 
+              name="slide" aria-hidden="true" hidden="" checked="checked">
+        <div class="slide-item">
+            <img src="/img/prueba1.jpg">
+        </div>
+        <input class="slide-open" type="radio" id="slide-2" 
+              name="slide" aria-hidden="true" hidden="">
+        <div class="slide-item">
+            <img src="/img/prueba2.jpg">
+        </div>
+        <input class="slide-open" type="radio" id="slide-3" 
+              name="slide" aria-hidden="true" hidden="">
+        <div class="slide-item">
+            <img src="/img/prueba3.jpg">
+        </div>
+        <label for="slide-3" class="slide-control prev control-1">‹</label>
+        <label for="slide-2" class="slide-control next control-1">›</label>
+        <label for="slide-1" class="slide-control prev control-2">‹</label>
+        <label for="slide-3" class="slide-control next control-2">›</label>
+        <label for="slide-2" class="slide-control prev control-3">‹</label>
+        <label for="slide-1" class="slide-control next control-3">›</label>
+        <ol class="slide-indicador">
+            <li>
+                <label for="slide-1" class="slide-circulo">•</label>
+            </li>
+            <li>
+                <label for="slide-2" class="slide-circulo">•</label>
+            </li>
+            <li>
+                <label for="slide-3" class="slide-circulo">•</label>
+            </li>
+        </ol>
+    </div>
+</div>
+
+<section>
+
+    <h2 class="about">Sobre mí</h2>
+
+    <article id="description">
+
+        <img src="/img/flor.jpg" alt="" id="profile">
+
+        <p id="description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Consectetur impedit recusandae nemo dolorum quasi, architecto ipsam 
+        similique accusamus voluptatibus eaque cum cupiditate tenetur deserunt 
+        quas nesciunt consequuntur quos. Aliquid, nam?
+        </p>
+    </article>
+
+    <article id="contact">
+
+        <h2 class="about">Contacto</h2>
+
+        <main id="registerBox">
+        
+            <form 
+                action="https://formsubmit.co/jmpizzorno.97@gmail.com" 
+                method="post" 
+                enctype="multipart/form-data"
+                id="formularioDeRegistro"
+            >
+
+            <!--Campos completables-->
+        <section id="nombreCompleto">
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Nombre"
+              class="campos"
+              required
+              value=""
+            />
+
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              placeholder="Apellido"
+              class="campos"
+              required
+              value=""
+            />
+            
+          </section>
+  
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Correo electrónico"
+            class="campos"
+            required
+            value=""
+          />
+
+
+          <section id="message">
+
+            
+            <input 
+              type="text"
+              name="text"
+              id="text-message"
+              placeholder="Su mensaje"
+              value=""
+              class="campos"
+              required
+            />
+
+            <input type="submit" value="Enviar" id="send">
+
+            <input type="hidden" name="_next" value="http://localhost:3010">
+            <input type="hidden" name="_captcha" value="false">
+          </section>
+
+    </article>
+</section>
+
+<footer>
+    
+    <nav id="footer">
+        
+        <p id="jesstech">Sitio web desarrollado por Juan Pizzorno <i class="fa-solid fa-cat"></i> </p>
+            
+            <section id="footer-icon-bar">
+            <a href="https://www.whatsapp.com/?lang=es" target="_blank"><i class="fa-brands fa-whatsapp ficon" ></i></a>
+            <a href="https://www.instagram.com/florlabaig/" target="_blank"><i class="fa-brands fa-instagram ficon"></i></a>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl" target="_blank"><i class="fa-solid fa-envelope ficon"></i></a>
+            </section>
+      </nav>
+</footer>  
+
+</body>
+
+
+</html>
